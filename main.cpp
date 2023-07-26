@@ -36,7 +36,7 @@ void VeTuongTren()
     {
     gotoXY(x,y) ;
     cout << "*" ;
-    x++;
+    x=x+2;
 }
 }
 void VeTuongDuoi()
@@ -46,7 +46,7 @@ void VeTuongDuoi()
     {
     gotoXY(x,y) ;
     cout << "*" ;
-    x++;
+    x=x+2;
 }
 }
 void VeTuongtrai()
