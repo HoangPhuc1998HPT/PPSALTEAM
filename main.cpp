@@ -99,7 +99,52 @@ void VeTuongphai()
     y++;
 }
 }
+void Khoitaotoadoran(int toadox[], int toadoy[])
+{
+    int x = 50 , y = 14 ;
+    for (int i = 0; i <lenghtsnake  ; i ++ ){
+        toadox[i] = x ;
+        toadoy[i] = y ;
+        x-- ;
 
+    }
+}
+void VeRan (int toadox[] , int toadoy[]) {
+
+        for (int i = 0 ; i < lenghtsnake ;i++ ){
+            gotoXY(toadox[i], toadoy[i])  ;
+            if (i == 0) {
+                cout <<"0" ;
+            } else {
+            cout <<"o" ;
+            }
+
+        }
+    /*
+        gotoXY(toadox[0] ,toadoy[0]) ;
+        cout << "o" ;
+        gotoXY(toadox[1] ,toadoy[1]) ;
+        cout << "o" ;
+        gotoXY(toadox[2] ,toadoy[2]) ;
+        cout << "o" ;
+        gotoXY(toadox[3] ,toadoy[3]) ;
+        cout << "o" ;
+        */
+
+}
+void Xoavitricu (int toadox[] , int toadoy[]) {
+
+        for (int i = 0 ; i < lenghtsnake ; i++ ){
+            gotoXY(toadox[i], toadoy[i])  ;
+
+                cout <<" " ;
+           // lenghtsnake++ ;
+
+        }
+    }
+
+// ham xu  ly di chuyen cua ran
+//xu ly ran di chuyen
 
 
     return 0;
