@@ -24,21 +24,7 @@ void Khoitaotoadoran(int toadox[], int toadoy[]);
 void VeRan (int toadox[] , int toadoy[]);
 void Xoavitricu (int toadox[] , int toadoy[]);
 
-//SV3 Sa
-void Dichuyeran(int toadox[],int toadoy[], int x , int y,int &toadothucanx,int &toadothucany);
-void them(int a[] , int x );
-void Xoa (int a[] , int vt);
 
-//SV4- Ảnh
-bool RanChamTuong (int toadox , int toadoy );
-bool Ranchamduoi (int toadox[], int toadoy[] );
-bool checkdieukienGameover (int toadox[] , int toadoy[] );
-
-//SV5 - Phúc
-void KhoiTaoToaDoThucAn(int toadoranx[], int toadorany[],int &toadothucanx, int &toadothucany);// tao thuc an
-bool checkRanDeLenThucAn (int toadoranx[], int toadorany[],int toadothucanx, int toadothucany);
-bool XuLyRanAnThucAn (int toadoranx, int toadorany,int toadothucanx, int toadothucany);
-// cải tiến phía sau
 int main()
 {
 
