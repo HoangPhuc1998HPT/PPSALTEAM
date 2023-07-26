@@ -24,7 +24,6 @@ void Khoitaotoadoran(int toadox[], int toadoy[]);
 void VeRan (int toadox[] , int toadoy[]);
 void Xoavitricu (int toadox[] , int toadoy[]);
 
-
 int main()
 {
 
