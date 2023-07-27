@@ -8,6 +8,7 @@
 #define Max 99
 #include <windows.h>
 #include <colordlg.h>
+#include "mylibsnake.h"
 
 
 using namespace std;
@@ -32,14 +33,24 @@ int main()
         int toadoy [Max] ;
 
 // xay tuong
-    void VeTuong()
+
+        VeTuong();
+
+// Khởi tạo tọa độ rắn + vẽ
+        Khoitaotoadoran(toadox , toadoy) ;
+        VeRan(toadox, toadoy) ;
+
+    return 0;
+}
+
+ void VeTuong()
 {
-        SetColor(1);
+       // SetColor(1);
     VeTuongTren();
     VeTuongDuoi();
     VeTuongtrai();
     VeTuongphai() ;
-        SetColor(9) ;
+      //  SetColor(9) ;
 
 }
 
@@ -132,5 +143,4 @@ void Xoavitricu (int toadox[] , int toadoy[]) {
 //xu ly ran di chuyen
 
 
-    return 0;
-}
+
