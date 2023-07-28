@@ -26,6 +26,11 @@ void Khoitaotoadoran(int toadox[], int toadoy[]);
 void VeRan (int toadox[] , int toadoy[]);
 void Xoavitricu (int toadox[] , int toadoy[]);
 
+//SV4- Ảnh
+bool RanChamTuong (int toadox , int toadoy );
+bool Ranchamduoi (int toadox[], int toadoy[] );
+bool checkdieukienGameover (int toadox[] , int toadoy[] );
+
 int main()
 {
 
@@ -142,6 +147,46 @@ void Xoavitricu (int toadox[] , int toadoy[]) {
 
 // ham xu  ly di chuyen cua ran
 //xu ly ran di chuyen
+//SV4-Ảnh
+bool RanChamTuong (int toadox , int toadoy ) //xuat toa do ran hien tai
+{
+    if (toadoy == 1 &&(toadox >= 10 && toadox <=100))
+    {
+        return true ;
+}
+if (toadoy == 28 &&(toadox >= 10 && toadox <=100))
+    {
+        return true ;
+}
+if (toadox == 10 &&(toadoy >= 1 && toadoy <=28))
+    {
+        return true ;
+}
+if (toadox == 100 &&(toadoy >= 1 && toadoy <=28))
+    {
+        return true ;
+}
+return false ;
+}
+bool Ranchamduoi (int toadox[], int toadoy[] )
+{
+        for (int i = 1 ; i < lenghtsnake ; i++) {
+            if (toadox[0] == toadox [i] && toadoy[0] == toadoy [i]){
+               return true ;
+            }
 
+        }
+        return false;
+}
+ bool checkdieukienGameover (int toadox[] , int toadoy[] )
+     {
+        bool check1 = RanChamTuong (toadox[0] ,toadoy[0] );
+        bool check2 = Ranchamduoi (toadox,toadoy );
+        if (check1 == true || check2 == true)
+        {
+            return true ;
+        }
+        return false ;
+     }
 
 
