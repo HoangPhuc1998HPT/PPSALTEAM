@@ -13,6 +13,7 @@
 
 using namespace std;
 int lenghtsnake = 6 ;
+
 //SV1 vẽ tường + khai báo main - Lâm
 void VeTuongTren();
 void VeTuongDuoi();
